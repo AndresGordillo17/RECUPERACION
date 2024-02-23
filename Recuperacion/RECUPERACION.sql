@@ -16,61 +16,61 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `autores`
+-- Table structure for table `libro`
 --
 
-DROP TABLE IF EXISTS `autores`;
+DROP TABLE IF EXISTS `libro`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `autores` (
-  `id_autor` int(11) NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(100) DEFAULT NULL,
-  `apellido` varchar(100) DEFAULT NULL,
-  `cedula` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id_autor`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `libro` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) DEFAULT NULL,
+  `autor_id` int(11) DEFAULT NULL,
+  `ISBN` varchar(20) DEFAULT NULL,
+  `paginas` int(11) DEFAULT NULL,
+  `edicion` int(11) DEFAULT NULL,
+  `editorial` varchar(255) DEFAULT NULL,
+  `lugar` varchar(255) DEFAULT NULL,
+  `fecha_edicion` date DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `autor_id` (`autor_id`),
+  CONSTRAINT `libro_ibfk_1` FOREIGN KEY (`autor_id`) REFERENCES `persona` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `autores`
+-- Dumping data for table `libro`
 --
 
-LOCK TABLES `autores` WRITE;
-/*!40000 ALTER TABLE `autores` DISABLE KEYS */;
-/*!40000 ALTER TABLE `autores` ENABLE KEYS */;
+LOCK TABLES `libro` WRITE;
+/*!40000 ALTER TABLE `libro` DISABLE KEYS */;
+INSERT INTO `libro` VALUES (4,'niieves',NULL,'16516',60,0,'sds','ecuador','2024-02-20'),(8,'1',NULL,'1',1,1,'1','1','2020-12-20'),(9,'1',NULL,'1',1,1,'1','1','2020-02-26');
+/*!40000 ALTER TABLE `libro` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `libros`
+-- Table structure for table `persona`
 --
 
-DROP TABLE IF EXISTS `libros`;
+DROP TABLE IF EXISTS `persona`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `libros` (
-  `id_libro` int(11) NOT NULL AUTO_INCREMENT,
-  `titulo` varchar(255) DEFAULT NULL,
-  `id_autor` int(11) DEFAULT NULL,
-  `isbn` varchar(20) DEFAULT NULL,
-  `paginas` int(11) DEFAULT NULL,
-  `edicion` varchar(50) DEFAULT NULL,
-  `editorial` varchar(100) DEFAULT NULL,
-  `lugar_ciudad` varchar(100) DEFAULT NULL,
-  `lugar_pais` varchar(100) DEFAULT NULL,
-  `fecha_edicion` varchar(100) DEFAULT NULL,
-  PRIMARY KEY (`id_libro`),
-  KEY `id_autor` (`id_autor`),
-  CONSTRAINT `libros_ibfk_1` FOREIGN KEY (`id_autor`) REFERENCES `autores` (`id_autor`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+CREATE TABLE `persona` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cedula` varchar(20) DEFAULT NULL,
+  `nombre` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `libros`
+-- Dumping data for table `persona`
 --
 
-LOCK TABLES `libros` WRITE;
-/*!40000 ALTER TABLE `libros` DISABLE KEYS */;
-/*!40000 ALTER TABLE `libros` ENABLE KEYS */;
+LOCK TABLES `persona` WRITE;
+/*!40000 ALTER TABLE `persona` DISABLE KEYS */;
+INSERT INTO `persona` VALUES (1,'1','ANDRES');
+/*!40000 ALTER TABLE `persona` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -82,4 +82,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-02-23 14:29:09
+-- Dump completed on 2024-02-23 16:56:02
