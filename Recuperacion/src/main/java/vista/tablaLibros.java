@@ -71,6 +71,7 @@ public class tablaLibros extends javax.swing.JInternalFrame {
         setMaximizable(true);
         setResizable(true);
 
+        TBLIBROS.setBackground(new java.awt.Color(204, 255, 204));
         TBLIBROS.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},

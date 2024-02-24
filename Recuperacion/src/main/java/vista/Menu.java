@@ -46,6 +46,7 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 631, Short.MAX_VALUE)
         );
 
+        menuListas.setBackground(new java.awt.Color(51, 51, 51));
         menuListas.setText("Libros");
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_DOWN_MASK));
