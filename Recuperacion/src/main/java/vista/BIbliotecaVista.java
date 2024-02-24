@@ -95,21 +95,45 @@ private ArrayList<Libro> libros = new ArrayList<>();
         setMaximizable(true);
         setResizable(true);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel1.setText("titulo Del Libro");
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel2.setText("autor");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel3.setText("ISBN");
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel4.setText("páginas");
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel5.setText("edición");
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel6.setText("editorial");
 
+        jLabel7.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel7.setText("lugar");
 
+        jLabel8.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
         jLabel8.setText("fecha de edición");
+
+        txtTitulo.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtAutor.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtISBN.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtPagina.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtEdicion.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtEditorial.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtLugar.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
+
+        txtFecha.setFont(new java.awt.Font("Segoe UI", 3, 12)); // NOI18N
 
         btnIngresar.setText("GUARDAR LIBRO");
         btnIngresar.addActionListener(new java.awt.event.ActionListener() {
@@ -195,7 +219,7 @@ private ArrayList<Libro> libros = new ArrayList<>();
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 727, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 261, Short.MAX_VALUE))
+                        .addGap(0, 256, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
