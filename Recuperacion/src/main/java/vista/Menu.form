@@ -6,7 +6,7 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="menuListas">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Listas"/>
+            <Property name="text" type="java.lang.String" value="Libros"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
@@ -24,7 +24,7 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="menuPilas">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pilas"/>
+            <Property name="text" type="java.lang.String" value="Ver_Libros"/>
           </Properties>
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
@@ -32,7 +32,7 @@
                 <Property name="accelerator" type="javax.swing.KeyStroke" editor="org.netbeans.modules.form.editors.KeyStrokeEditor">
                   <KeyStroke key="Shift+Z"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="EJEM_5"/>
+                <Property name="text" type="java.lang.String" value="Ver"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem6ActionPerformed"/>

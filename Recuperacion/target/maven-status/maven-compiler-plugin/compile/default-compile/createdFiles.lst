@@ -1,10 +1,6 @@
-Vista\Main.class
-Vista\ConexionBDD.class
-Vista\PruebaBDD.class
 Vista\Menu$2.class
-Modelo\Libro.class
-Vista\Menu$1.class
-Vista\Libro.class
-Modelo\Persona.class
 Vista\Menu$3.class
 Vista\Menu.class
+Modelo\Libro.class
+Vista\Menu$1.class
+Modelo\Persona.class

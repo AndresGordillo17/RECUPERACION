@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Vista;
+package vista;
 
 /**
  *
@@ -46,7 +46,7 @@ public class Menu extends javax.swing.JFrame {
             .addGap(0, 631, Short.MAX_VALUE)
         );
 
-        menuListas.setText("Listas");
+        menuListas.setText("Libros");
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_A, java.awt.event.InputEvent.SHIFT_DOWN_MASK));
         jMenuItem2.setText("LIBROS");
@@ -59,10 +59,10 @@ public class Menu extends javax.swing.JFrame {
 
         jMenuBar1.add(menuListas);
 
-        menuPilas.setText("Pilas");
+        menuPilas.setText("Ver_Libros");
 
         jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.SHIFT_DOWN_MASK));
-        jMenuItem6.setText("EJEM_5");
+        jMenuItem6.setText("Ver");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem6ActionPerformed(evt);
@@ -91,15 +91,15 @@ public class Menu extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        // TODO add your handling code here:
-//        EJEM_5 N5=new EJEM_5();
-//        escritorio.add(N5);
-//        N5.show(); 
+//         TODO add your handling code here:
+        tablaLibros N5=new tablaLibros();
+        escritorio.add(N5);
+        N5.show(); 
     }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
-        LibroVista Estaticas=new LibroVista();
+        BIbliotecaVista Estaticas=new BIbliotecaVista();
         escritorio.add(Estaticas);
         Estaticas.show();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -134,6 +134,22 @@ public class Menu extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Menu.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
