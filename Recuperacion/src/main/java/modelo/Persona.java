@@ -4,10 +4,6 @@
  */
 package modelo;
 
-/**
- *
- * @author alen
- */
 public class Persona {
 
     private int id;

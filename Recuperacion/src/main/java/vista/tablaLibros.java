@@ -11,10 +11,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author alen
- */
 public class tablaLibros extends javax.swing.JInternalFrame {
   private DefaultTableModel model;
 

@@ -18,11 +18,6 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import modelo.Libro;
 
-/**
- *
- * @author alen
- */
-
     
 public class BIbliotecaVista extends javax.swing.JInternalFrame {
  
